@@ -2,6 +2,8 @@ const dialog = document.getElementById('link-dialog');
 const title = document.getElementById('dialog-title');
 const copy = document.getElementById('dialog-copy');
 
+document.addEventListener('contextmenu', (event) => event.preventDefault(), { capture: true });
+
 document.querySelectorAll('[data-link]').forEach((button) => {
   button.addEventListener('click', () => {
     const isGroup = button.dataset.link === 'grupo';

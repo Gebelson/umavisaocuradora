@@ -11,3 +11,4 @@ Para conferir localmente, execute `python -m http.server 4173 --directory dist` 
 - A publicação atual usa o controle de acesso da hospedagem. Não coloque senhas, tokens ou dados privados em HTML, CSS, JavaScript ou arquivos de `dist/`.
 - O servidor de hospedagem deve configurar cabeçalhos de resposta como `Content-Security-Policy` (incluindo `frame-ancestors`), `X-Content-Type-Options` e `Referrer-Policy` quando esse recurso estiver disponível. A CSP em `<meta>` não substitui esses cabeçalhos.
 - Quem recebe uma página no navegador pode ver seu HTML, CSS, JavaScript e imagens pelas ferramentas do próprio navegador. A proteção de conteúdo confidencial precisa ocorrer antes de enviá-lo ao visitante.
+- A seleção de texto e o menu de contexto estão desativados na interface; isso não impede a inspeção do código recebido pelo navegador.
