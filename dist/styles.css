@@ -47,3 +47,9 @@ body{-webkit-touch-callout:none}
   .bundle .bundle-image img{height:clamp(112px,17vw,170px)}
   .bundle .plus{width:100%;padding:0;text-align:center;margin-top:91px}
 }
+
+@media(min-width:701px){
+  .book-grid{position:relative}
+  .book-grid::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:#d5ded7;transform:translateX(-50%)}
+  .book-feature+.book-feature{border-left:0;padding-left:0}
+}
