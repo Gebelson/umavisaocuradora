@@ -33,3 +33,4 @@
 .closing-divider{display:flex;flex:1 0 20px;align-self:stretch;justify-content:center;width:auto;background:transparent}
 .closing-divider::before{content:"";width:1px;background:#cdd7cf}
 .bundle .bundle-image img{height:clamp(112px,15vw,190px);width:auto;max-height:none;max-width:none;object-fit:contain}
+.book-art{background:none}
