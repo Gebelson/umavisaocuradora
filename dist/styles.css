@@ -7,3 +7,11 @@
 .brand-wordmark{width:95px;height:auto;max-height:43px;object-fit:contain}
 .footer-brand .brand-wordmark{width:82px;max-height:36px}
 @media(max-width:700px){.bundle .plus{display:none}}
+.whatsapp-icon{display:inline-block;flex:none;width:23px;height:23px;background:currentColor;-webkit-mask:url('assets/whatsapp.svg') center/contain no-repeat;mask:url('assets/whatsapp.svg') center/contain no-repeat}
+@media(min-width:701px){.hero-products{align-items:center;padding:0}.hero-products:after{bottom:92px}}
+.bundle{align-items:flex-start}
+.bundle-image{align-items:center}
+.bundle-item p{min-height:42px}
+.plus{align-self:flex-start;margin-top:91px;transform:none}
+@media(max-width:700px){.bundle .bundle-image,.bundle .bundle-book .bundle-image{height:180px}}
+@media(max-width:700px){.button-header .whatsapp-icon{display:inline-block}}
