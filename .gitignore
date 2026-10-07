@@ -1,0 +1,6 @@
+.env
+.env.*
+!.env.example
+.playwright-cli/
+.sites-runtime/
+*.tar.gz

@@ -34,3 +34,5 @@
 .closing-divider::before{content:"";width:1px;background:#cdd7cf}
 .bundle .bundle-image img{height:clamp(112px,15vw,190px);width:auto;max-height:none;max-width:none;object-fit:contain}
 .book-art{background:none}
+html,body{cursor:url('assets/cursor.svg') 4 3,auto}
+a,button,summary,[role="button"]{cursor:pointer}
