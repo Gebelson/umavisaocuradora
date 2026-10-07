@@ -57,7 +57,7 @@ body{-webkit-touch-callout:none}
 @media(max-width:700px){.hero-copy{padding-bottom:58px}}
 
 .hero{background:#f6f1e8}
-.hero::before{background-image:url('assets/hero-livros.webp');background-position:center center;opacity:1}
+.hero::before{background-image:url('assets/hero-banner.webp');background-position:center center;opacity:1}
 .hero-wash{background:linear-gradient(90deg,#f8f7f3f2 0%,#f8f7f3d9 27%,#f8f7f391 41%,#f8f7f300 63%)}
 @media(max-width:700px){
   .hero-inner{min-height:780px}
