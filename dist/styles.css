@@ -24,5 +24,7 @@
 .price-card .button-coral{position:relative;overflow:hidden;isolation:isolate}
 .price-card .button-coral::after{content:"";position:absolute;top:-30%;left:-55%;width:36%;height:160%;pointer-events:none;background:linear-gradient(90deg,transparent,#ffffff94,transparent);filter:blur(2px);transform:skewX(-22deg);animation:button-reflection 4.8s ease-in-out infinite}
 @keyframes button-reflection{0%,55%{left:-55%}83%,100%{left:135%}}
-@media(hover:hover) and (prefers-reduced-motion:no-preference){.bundle-item{transition:transform .28s ease}.bundle-item img{transition:transform .28s ease,filter .28s ease}.bundle-item:hover{transform:translateY(-7px)}.bundle-item:hover img{transform:scale(1.055);filter:drop-shadow(11px 14px 10px #1a1b1e45)}}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.bundle-image img{transform-origin:50% 80%;transition:transform .28s ease,filter .28s ease}.bundle-image img:hover{transform:scale(1.09) rotate(3deg);filter:drop-shadow(11px 14px 10px #1a1b1e45)}}
 @media(prefers-reduced-motion:reduce){.price-card .button-coral::after{animation:none;display:none}}
+.closing-copy{padding-left:0}
+.closing-benefits>div{text-align:left}
