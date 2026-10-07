@@ -35,7 +35,7 @@
 .bundle .bundle-image img{height:clamp(112px,15vw,190px);width:auto;max-height:none;max-width:none;object-fit:contain}
 .book-art{background:none}
 html,body{cursor:url('assets/cursor.svg?v=5') 3 3,auto}
-a,button,summary,[role="button"]{cursor:url('assets/cursor-action.svg?v=5') 3 3,pointer}
+a,button,summary,[role="button"]{cursor:url('assets/cursor-action.svg?v=6') 3 3,pointer}
 body,body *{-webkit-user-select:none;user-select:none}
 body{-webkit-touch-callout:none}
 
