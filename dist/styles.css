@@ -28,3 +28,7 @@
 @media(prefers-reduced-motion:reduce){.price-card .button-coral::after{animation:none;display:none}}
 .closing-copy{padding-left:0}
 .closing-benefits>div{text-align:left}
+.closing-benefits{display:flex;align-items:stretch}
+.closing-benefits>div{flex:0 1 auto;min-width:0;border:0;padding:0}
+.closing-divider{display:flex;flex:1 0 20px;align-self:stretch;justify-content:center;width:auto;background:transparent}
+.closing-divider::before{content:"";width:1px;background:#cdd7cf}
