@@ -38,3 +38,11 @@ html,body{cursor:url('assets/cursor.svg?v=5') 3 3,auto}
 a,button,summary,[role="button"]{cursor:url('assets/cursor-action.svg?v=5') 3 3,pointer}
 body,body *{-webkit-user-select:none;user-select:none}
 body{-webkit-touch-callout:none}
+
+/* Center each separator in the actual gap between neighboring product images. */
+@media(min-width:701px){
+  .bundle{display:grid;grid-template-columns:clamp(90px,13.6vw,136px) minmax(16px,1fr) clamp(90px,13.6vw,136px) minmax(16px,1fr) clamp(102px,15.5vw,155px) minmax(16px,1fr) clamp(84px,12.8vw,128px) minmax(16px,1fr) clamp(90px,13.6vw,136px);gap:0;align-items:start}
+  .bundle-item{width:100%;min-width:0}
+  .bundle .bundle-image img{height:clamp(112px,17vw,170px)}
+  .bundle .plus{width:100%;padding:0;text-align:center;margin-top:91px}
+}
