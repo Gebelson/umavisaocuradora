@@ -53,3 +53,15 @@ body{-webkit-touch-callout:none}
   .book-grid::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:#d5ded7;transform:translateX(-50%)}
   .book-feature+.book-feature{border-left:0;padding-left:0}
 }
+
+@media(max-width:700px){.hero-copy{padding-bottom:58px}}
+
+.hero{background:#f6f1e8}
+.hero::before{background-image:url('assets/hero-livros.webp');background-position:center center;opacity:1}
+.hero-wash{background:linear-gradient(90deg,#f8f7f3f2 0%,#f8f7f3d9 27%,#f8f7f391 41%,#f8f7f300 63%)}
+@media(max-width:700px){
+  .hero-inner{min-height:780px}
+  .hero-copy{padding-bottom:0}
+  .hero::before{background-size:auto 440px;background-position:85% bottom;opacity:1}
+  .hero-wash{background:linear-gradient(180deg,#f8f7f3 0%,#f8f7f3 36%,#f8f7f3d9 47%,#f8f7f300 64%)}
+}
