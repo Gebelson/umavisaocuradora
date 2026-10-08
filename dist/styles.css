@@ -20,7 +20,7 @@
 .book-art{position:relative;isolation:isolate}
 .book-art::after{content:"";position:absolute;z-index:0;left:18%;right:18%;bottom:3px;height:22px;border-radius:50%;background:#1923394a;filter:blur(11px)}
 .book-art img{position:relative;z-index:1;filter:drop-shadow(2px 5px 3px #101b2e30) drop-shadow(12px 16px 12px #101b2e3d)}
-.old-price{font-size:36px}
+.old-price{font-size:44px}
 .price-card .button-coral{position:relative;overflow:hidden;isolation:isolate}
 .price-card .button-coral::after{content:"";position:absolute;top:-30%;left:-55%;width:36%;height:160%;pointer-events:none;background:linear-gradient(90deg,transparent,#ffffff94,transparent);filter:blur(2px);transform:skewX(-22deg);animation:button-reflection 4.8s ease-in-out infinite}
 @keyframes button-reflection{0%,55%{left:-55%}83%,100%{left:135%}}
