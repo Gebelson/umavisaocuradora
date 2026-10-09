@@ -306,6 +306,36 @@ body {
   filter: drop-shadow(0 5px 12px rgba(107, 63, 75, 0.08));
 }
 
+/* Individual Content Cards — Page 2 (Conheça a Autora) */
+.page-card-wrap {
+  position: relative;
+  z-index: 10;
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 6px 0;
+}
+
+.page-card-wrap picture {
+  display: block;
+  width: 100%;
+}
+
+.page-card-wrap img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--radius-card);
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.page-card-wrap img:hover {
+  transform: translateY(-1.5px);
+  filter: drop-shadow(0 5px 12px rgba(107, 63, 75, 0.08));
+}
+
 /* Biography Text Section — Page 2 */
 .bio-text-wrap {
   position: relative;
