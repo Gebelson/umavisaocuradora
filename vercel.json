@@ -1,4 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/link", "destination": "/link/index.html" },
+    { "source": "/link/conheca-a-autora", "destination": "/link/conheca-a-autora/index.html" },
+    { "source": "/link/meus-livros", "destination": "/link/meus-livros/index.html" }
+  ]
 }

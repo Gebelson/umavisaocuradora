@@ -1,0 +1,371 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   DENISE MALAFAIA — IDENTIDADE VISUAL & DESIGN SYSTEM (LINKTREE PAGES)
+   ========================================================================== */
+
+:root {
+  --color-marfim: #F9F4EF;
+  --color-nude: #E7C5BD;
+  --color-rosa-antigo: #B76E73;
+  --color-ameixa: #6B3F4B;
+  --color-ameixa-dark: #4A242E;
+  --color-dourado: #C9A96B;
+  --color-dourado-suave: #D4BA85;
+  --color-card-bg: #FAF0EB;
+  --color-card-border: #F0DFD7;
+  --color-texto: #4A242E;
+  --color-texto-muted: #7E4B56;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-script: "Allura", cursive;
+
+  --max-mobile-width: 430px;
+  --radius-card: 18px;
+  --radius-pill: 9999px;
+}
+
+/* Base & Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background-color: var(--color-marfim);
+  font-family: var(--font-sans);
+  color: var(--color-texto);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-marfim);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: hidden;
+}
+
+/* Mobile-first and strictly mobile-format container on desktop */
+.linktree-page {
+  width: 100%;
+  max-width: var(--max-mobile-width);
+  min-height: 100dvh;
+  margin-inline: auto;
+  position: relative;
+  overflow-x: clip;
+  background-color: var(--color-marfim);
+  background-image: 
+    radial-gradient(ellipse at 50% 8%, rgba(255, 255, 255, 0.75) 0%, transparent 65%),
+    radial-gradient(ellipse at 50% 85%, rgba(231, 197, 189, 0.2) 0%, transparent 75%);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 36px;
+}
+
+.linktree-page img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Botanical corner decorations */
+.botanical-decor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.82;
+  user-select: none;
+}
+
+.botanical-tl {
+  top: -15px;
+  left: -25px;
+  width: 125px;
+  transform: rotate(-8deg);
+}
+
+.botanical-tr {
+  top: 40px;
+  right: -20px;
+  width: 135px;
+}
+
+.botanical-bl {
+  bottom: 0px;
+  left: -25px;
+  width: 140px;
+}
+
+.botanical-br {
+  bottom: 0px;
+  right: -25px;
+  width: 135px;
+  transform: scaleX(-1);
+}
+
+/* Discreet back navigation */
+.back-nav-bar {
+  position: relative;
+  z-index: 20;
+  padding: 14px 18px 4px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background-color: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(201, 169, 107, 0.25);
+  color: var(--color-texto-muted);
+  text-decoration: none;
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  transition: all 0.22s ease;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.back-link:hover {
+  color: var(--color-ameixa-dark);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: var(--color-dourado);
+  transform: translateX(-2px);
+  box-shadow: 0 3px 10px rgba(107, 63, 75, 0.08);
+}
+
+.back-link:focus-visible {
+  outline: 2px solid var(--color-dourado);
+  outline-offset: 2px;
+}
+
+.back-link svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2.3;
+}
+
+/* Section titles */
+.section-title-wrap {
+  position: relative;
+  z-index: 10;
+  padding: 10px 18px 6px;
+  text-align: center;
+}
+
+.section-title-wrap img {
+  margin: 0 auto;
+  max-width: 84%;
+  height: auto;
+}
+
+/* Top Hero Section — Page 1 (Link da Bio) */
+.home-hero-wrap {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.home-hero-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navigation Buttons — Page 1 */
+.nav-buttons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 4px 18px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-btn {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  border-radius: var(--radius-pill);
+  outline: none;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+.nav-btn picture,
+.nav-btn img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-pill);
+  pointer-events: none;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2.5px);
+  filter: drop-shadow(0 6px 14px rgba(107, 63, 75, 0.2));
+}
+
+.nav-btn:active {
+  transform: translateY(0.5px) scale(0.985);
+  filter: drop-shadow(0 2px 6px rgba(107, 63, 75, 0.12));
+}
+
+.nav-btn:focus-visible {
+  outline: 2px solid var(--color-dourado);
+  outline-offset: 3px;
+}
+
+/* Quote Graphic Section */
+.quote-graphic-wrap {
+  position: relative;
+  z-index: 10;
+  padding: 16px 20px 4px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.quote-graphic-wrap img {
+  margin: 0 auto;
+  max-width: 86%;
+  height: auto;
+}
+
+/* Content Cards — Pages 2 and 3 */
+.page-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 16px;
+  position: relative;
+  z-index: 10;
+}
+
+.card-item {
+  position: relative;
+  width: 100%;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.card-item img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+  display: block;
+}
+
+.card-item:hover {
+  transform: translateY(-1.5px);
+  filter: drop-shadow(0 5px 12px rgba(107, 63, 75, 0.08));
+}
+
+/* Biography Text Section — Page 2 */
+.bio-text-wrap {
+  position: relative;
+  z-index: 10;
+  padding: 10px 20px 14px;
+}
+
+.bio-text {
+  font-family: var(--font-serif);
+  font-size: 15.2px;
+  line-height: 1.65;
+  color: var(--color-ameixa-dark);
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  padding: 0 4px;
+}
+
+/* Obras Em Destaque Grid — Page 2 */
+.obras-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 0 16px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 6px;
+}
+
+.obras-grid-item {
+  position: relative;
+  width: 100%;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.obras-grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
+
+.obras-grid-item:hover {
+  transform: translateY(-1.5px);
+  filter: drop-shadow(0 5px 12px rgba(107, 63, 75, 0.08));
+}
+
+/* Footer note & subtle copyright */
+.linktree-footer {
+  margin-top: auto;
+  padding-top: 24px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: rgba(107, 63, 75, 0.6);
+  text-transform: uppercase;
+}
+
+.footer-copy a {
+  color: var(--color-rosa-antigo);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-copy a:hover {
+  color: var(--color-ameixa);
+}
+
+/* Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
