@@ -473,7 +473,8 @@ body {
 }
 
 @media (min-width: 601px) {
-  .link-home-page {
+  .link-home-page,
+  .link-subpage {
     min-height: 100vh;
     justify-content: space-between;
     padding-bottom: 24px;
@@ -481,6 +482,170 @@ body {
 
   .link-home-page .quote-graphic-wrap img {
     max-width: 65%;
+  }
+}
+
+/* ==========================================================================
+   PAGES 2 & 3: CONHEÇA A AUTORA & MEUS LIVROS — NO-SCROLL SINGLE-SCREEN MOBILE FIT
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  html.is-subpage,
+  body.is-subpage {
+    height: 100%;
+    overflow: hidden !important;
+  }
+
+  /* Single-screen container for subpages */
+  .link-subpage {
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    min-height: 100dvh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: max(8px, env(safe-area-inset-top, 8px)) 0 max(8px, env(safe-area-inset-bottom, 8px)) !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Absolute floating back navigation */
+  .link-subpage .back-nav-bar {
+    position: absolute !important;
+    top: max(8px, env(safe-area-inset-top, 8px)) !important;
+    left: 14px !important;
+    z-index: 100 !important;
+    padding: 0 !important;
+  }
+  .link-subpage .back-link {
+    padding: 5px 11px !important;
+    font-size: 11px !important;
+  }
+
+  /* Subpage title headers */
+  .link-subpage .section-title-wrap {
+    flex: 0 0 auto !important;
+    padding: 2px 16px 2px !important;
+    margin: 0 !important;
+  }
+  .link-subpage .section-title-wrap img {
+    max-height: 24px !important;
+    width: auto !important;
+    max-width: 75% !important;
+    object-fit: contain !important;
+  }
+
+  /* PAGE 2: Conheça a Autora specifics */
+  .link-autora-page .page-card-wrap {
+    flex: 0 1 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 16px !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+  }
+  .link-autora-page .page-card-wrap picture {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-height: 100% !important;
+    width: 100% !important;
+  }
+  .link-autora-page .page-card-wrap img {
+    width: auto !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+  }
+  .link-autora-page .hero-card-autora img {
+    max-height: min(23dvh, 180px) !important;
+  }
+  .link-autora-page .destaque-card-autora img {
+    max-height: min(11dvh, 76px) !important;
+  }
+  .link-autora-page .obras-card-autora img {
+    max-height: min(17dvh, 120px) !important;
+  }
+
+  .link-autora-page .bio-text-wrap {
+    flex: 0 1 auto !important;
+    padding: 0 18px !important;
+    margin: 0 !important;
+  }
+  .link-autora-page .bio-text {
+    font-size: clamp(11.5px, 3.4vw, 13.5px) !important;
+    line-height: 1.42 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .link-autora-page .quote-graphic-wrap {
+    flex: 0 1 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 16px !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+  }
+  .link-autora-page .quote-graphic-wrap picture {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-height: 100% !important;
+  }
+  .link-autora-page .quote-graphic-wrap img {
+    max-height: min(10dvh, 60px) !important;
+    width: auto !important;
+    max-width: 65% !important;
+    object-fit: contain !important;
+  }
+
+  /* PAGE 3: Meus Livros specifics */
+  .link-livros-page .page-cards-list {
+    flex: 1 1 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    gap: 4px !important;
+    padding: 0 16px !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+  }
+  .link-livros-page .card-item {
+    flex: 1 1 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+  }
+  .link-livros-page .card-item picture {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    width: 100% !important;
+  }
+  .link-livros-page .card-item img {
+    max-height: 100% !important;
+    width: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+  }
+  .link-livros-page .intro-card-livros {
+    max-height: min(16dvh, 115px) !important;
+  }
+  .link-livros-page .book-card-vol1 {
+    max-height: min(28dvh, 195px) !important;
+  }
+  .link-livros-page .book-card-vol2 {
+    max-height: min(28dvh, 195px) !important;
+  }
+  .link-livros-page .quote-card-livros {
+    max-height: min(14dvh, 95px) !important;
   }
 }
 
