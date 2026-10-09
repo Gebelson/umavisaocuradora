@@ -208,14 +208,14 @@ body {
 .nav-buttons-group {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 0;
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  padding: 0 24px;
+  padding: 0 16px;
   position: relative;
   z-index: 10;
-  margin-top: -6px;
+  margin-top: -12px;
   box-sizing: border-box;
 }
 
@@ -229,8 +229,11 @@ body {
   transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
-  filter: drop-shadow(0 4px 10px rgba(107, 63, 75, 0.12));
   box-sizing: border-box;
+}
+
+.nav-btn + .nav-btn {
+  margin-top: -9%;
 }
 
 .nav-btn picture {
@@ -250,17 +253,18 @@ body {
 
 .nav-btn:hover {
   transform: translateY(-2px);
-  filter: drop-shadow(0 7px 16px rgba(107, 63, 75, 0.22));
+  filter: brightness(1.02);
 }
 
 .nav-btn:active {
-  transform: translateY(0.5px) scale(0.985);
-  filter: drop-shadow(0 2px 6px rgba(107, 63, 75, 0.14));
+  transform: translateY(0.5px) scale(0.99);
+  filter: brightness(0.98);
 }
 
 .nav-btn:focus-visible {
   outline: 2px solid var(--color-dourado);
   outline-offset: 3px;
+  border-radius: var(--radius-pill);
 }
 
 /* Quote Graphic Section */
