@@ -523,16 +523,32 @@ body {
   }
 
   /* Subpage title headers */
+  .link-subpage > header.section-title-wrap {
+    flex: 0 0 auto !important;
+    padding: 40px 16px 2px !important;
+    margin: 0 !important;
+  }
   .link-subpage .section-title-wrap {
     flex: 0 0 auto !important;
     padding: 2px 16px 2px !important;
     margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .link-subpage .section-title-wrap picture {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
   }
   .link-subpage .section-title-wrap img {
-    max-height: 24px !important;
-    width: auto !important;
-    max-width: 75% !important;
-    object-fit: contain !important;
+    width: 82% !important;
+    max-width: 320px !important;
+    height: auto !important;
+    max-height: none !important;
+    display: block !important;
+    margin: 0 auto !important;
   }
 
   /* PAGE 2: Conheça a Autora specifics */
