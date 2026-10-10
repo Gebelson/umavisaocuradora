@@ -512,7 +512,7 @@ body {
   /* Absolute floating back navigation */
   .link-subpage .back-nav-bar {
     position: absolute !important;
-    top: max(8px, env(safe-area-inset-top, 8px)) !important;
+    top: max(10px, env(safe-area-inset-top, 10px)) !important;
     left: 14px !important;
     z-index: 100 !important;
     padding: 0 !important;
@@ -525,7 +525,7 @@ body {
   /* Subpage title headers */
   .link-subpage > header.section-title-wrap {
     flex: 0 0 auto !important;
-    padding: 40px 16px 2px !important;
+    padding: calc(max(10px, env(safe-area-inset-top, 10px)) + 38px) 16px 4px !important;
     margin: 0 !important;
   }
   .link-subpage .section-title-wrap {
